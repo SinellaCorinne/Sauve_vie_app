@@ -87,7 +87,7 @@ export default function RoleChoiceScreen({ navigation }: Props) {
               {/* CTA inline */}
               <View style={[styles.cardCta, { borderTopColor: role.border + '20' }]}>
                 <Text style={[styles.cardCtaText, { color: role.tagColor }]}>
-                  Créer un compte  →
+                    Créer un compte →
                 </Text>
               </View>
             </TouchableOpacity>
@@ -108,7 +108,7 @@ export default function RoleChoiceScreen({ navigation }: Props) {
           activeOpacity={0.75}
         >
           <Text style={styles.loginText}>J'ai déjà un compte</Text>
-          <Text style={[styles.loginTextBold, { color: Colors.primary }]}>  Se connecter →</Text>
+          <Text style={[styles.loginTextBold, { color: Colors.primary }]}> Se connecter →</Text>
         </TouchableOpacity>
       </SafeAreaView>
     </View>

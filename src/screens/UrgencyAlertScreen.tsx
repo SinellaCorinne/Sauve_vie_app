@@ -70,7 +70,7 @@ export default function UrgencyAlertScreen({ navigation }: Props) {
 
           {/* Texte */}
           <View style={styles.textBlock}>
-            <Text style={styles.title}>Besoin critique{'\n'}de sang</Text>
+            <Text style={styles.title}>Besoin critique de sang</Text>
             <Text style={styles.subtitle}>
               Une demande urgente nécessite votre réponse immédiate. Vérifiez la compatibilité et répondez dès maintenant.
             </Text>

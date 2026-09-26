@@ -51,8 +51,9 @@ export default function DonorHomeScreen({ navigation }: Props) {
     try {
       if (!isRefresh) setLoading(true);
       setError(null);
-      const response = await api.get(donorRoutes.compatibility);
-      setRequests(response.data.data || response.data);
+        const response = await api.get(donorRoutes.compatibility);
+        const requestsData = response?.data?.requests?.data ?? response?.data?.data ?? response?.data ?? [];
+        setRequests(requestsData);
     } catch (err: any) {
       setError(err?.response?.data?.message || 'Impossible de charger les demandes.');
     } finally {
@@ -199,7 +200,7 @@ export default function DonorHomeScreen({ navigation }: Props) {
                 onPress={() => handleRespond(item.id)}
                 activeOpacity={0.85}
               >
-                <Text style={styles.respondButtonText}>Je suis dispo ✓</Text>
+                <Text style={styles.respondButtonText}>Je suis disponible ✓</Text>
               </TouchableOpacity>
             </View>
           </View>

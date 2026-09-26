@@ -23,7 +23,7 @@ const SLIDES = [
   {
     key: 'urgency',
     icon: '🚨',
-    title: 'Répondez en\ntemps réel',
+    title: 'Répondez en temps réel',
     subtitle: 'Chaque minute compte. Recevez les alertes de sang compatibles et sauvez des vies instantanément.',
     image: require('../../assets/Blood donation-amico.png'),
     accent: Colors.primary,
@@ -32,7 +32,7 @@ const SLIDES = [
   {
     key: 'compatibility',
     icon: '🩸',
-    title: 'Groupes sanguins\ncompatibles',
+    title: 'Groupes sanguins compatibles',
     subtitle: 'Notre système intelligent vous connecte aux demandes qui correspondent exactement à votre profil.',
     image: require('../../assets/Blood donation-bro.png'),
     accent: '#8E44AD',
@@ -41,7 +41,7 @@ const SLIDES = [
   {
     key: 'impact',
     icon: '💪',
-    title: 'Un geste,\nmille vies',
+    title: 'Un geste, mille vies',
     subtitle: "Rejoignez des milliers de donneurs et d'hôpitaux qui font confiance à Sauve-Vie chaque jour.",
     image: require('../../assets/Blood donation-pana.png'),
     accent: '#27AE60',
@@ -145,7 +145,7 @@ export default function OnboardingScreen({ navigation }: Props) {
             onPress={goNext}
             activeOpacity={0.85}
           >
-            <Text style={styles.nextText}>{isLast ? 'Commencer  →' : 'Suivant  →'}</Text>
+            <Text style={styles.nextText}>{isLast ? 'Commencer →' : 'Suivant →'}</Text>
           </TouchableOpacity>
         </View>
       </SafeAreaView>

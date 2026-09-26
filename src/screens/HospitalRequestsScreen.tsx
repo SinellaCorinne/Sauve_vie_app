@@ -56,8 +56,9 @@ export default function HospitalRequestsScreen({ navigation }: Props) {
     try {
       if (!isRefresh) setLoading(true);
       setError(null);
-      const response = await api.get(hospitalRoutes.myRequests);
-      setRequests(response.data.data || response.data || []);
+        const response = await api.get(hospitalRoutes.myRequests);
+        const requestsData = response?.data?.requests?.data ?? response?.data?.data ?? response?.data ?? [];
+        setRequests(requestsData);
     } catch (err: any) {
       setError(err?.response?.data?.message || 'Impossible de charger les demandes.');
     } finally {

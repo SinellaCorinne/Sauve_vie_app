@@ -102,7 +102,7 @@ export default function RegisterDonorScreen({ navigation }: Props) {
           {/* Header */}
           <SafeAreaView style={styles.header}>
             <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
-              <Text style={styles.backArrow}>←</Text>
+              <Text style={styles.backArrow}>◀️</Text>
             </TouchableOpacity>
             <View style={styles.headerBadge}>
               <Text style={styles.headerBadgeText}>🩸 Donneur</Text>
@@ -110,7 +110,7 @@ export default function RegisterDonorScreen({ navigation }: Props) {
           </SafeAreaView>
 
           <View style={styles.heroSection}>
-            <Text style={styles.heroTitle}>Créer un compte{'\n'}donneur</Text>
+            <Text style={styles.heroTitle}>Créer un compte donneur</Text>
             <Text style={styles.heroSubtitle}>Rejoignez notre réseau et aidez à sauver des vies.</Text>
           </View>
 

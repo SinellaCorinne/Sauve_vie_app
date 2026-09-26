@@ -189,7 +189,7 @@ export default function LoginScreen() {
               onPress={() => navigation.navigate('RoleChoice')}
               activeOpacity={0.75}
             >
-              <Text style={styles.registerText}>Créer un compte  →</Text>
+              <Text style={styles.registerText}>Créer un compte →</Text>
             </TouchableOpacity>
           </View>
         </ScrollView>

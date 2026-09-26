@@ -103,7 +103,7 @@ export default function BloodRequestDetailScreen({ route, navigation }: Props) {
       <SafeAreaView style={styles.headerSafe}>
         <View style={styles.header}>
           <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
-            <Text style={styles.backBtnText}>←</Text>
+            <Text style={styles.backBtnText}>◀️</Text>
           </TouchableOpacity>
           <Text style={styles.headerTitle}>Détail de la demande</Text>
           <View style={[styles.headerStatus, { backgroundColor: st.bg }]}>

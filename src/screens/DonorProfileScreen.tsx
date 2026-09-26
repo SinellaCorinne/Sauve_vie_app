@@ -84,7 +84,7 @@ export default function DonorProfileScreen({ navigation }: Props) {
           <SafeAreaView style={styles.headerSafe}>
             <View style={styles.header}>
               <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
-                <Text style={styles.backBtnText}>←</Text>
+                <Text style={styles.backBtnText}>◀️</Text>
               </TouchableOpacity>
               <Text style={styles.headerTitle}>Mon profil</Text>
               <TouchableOpacity style={styles.logoutBtn} onPress={signOut}>

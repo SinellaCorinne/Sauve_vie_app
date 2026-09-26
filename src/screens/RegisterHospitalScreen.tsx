@@ -115,7 +115,7 @@ export default function RegisterHospitalScreen({ navigation }: Props) {
           {/* Header */}
           <SafeAreaView style={styles.header}>
             <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
-              <Text style={styles.backArrow}>←</Text>
+              <Text style={styles.backArrow}>◀️</Text>
             </TouchableOpacity>
             <View style={styles.headerBadge}>
               <Text style={styles.headerBadgeText}>🏥 Hôpital</Text>
@@ -123,7 +123,7 @@ export default function RegisterHospitalScreen({ navigation }: Props) {
           </SafeAreaView>
 
           <View style={styles.heroSection}>
-            <Text style={styles.heroTitle}>Créer un compte{'\n'}établissement</Text>
+            <Text style={styles.heroTitle}>Créer un compte établissement</Text>
             <Text style={styles.heroSubtitle}>Gérez vos besoins en sang et connectez-vous aux donneurs compatibles.</Text>
           </View>
 

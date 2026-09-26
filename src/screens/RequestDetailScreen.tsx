@@ -89,7 +89,7 @@ export default function RequestDetailScreen({ route, navigation }: Props) {
       <SafeAreaView style={styles.headerSafe}>
         <View style={styles.header}>
           <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
-            <Text style={styles.backBtnText}>←</Text>
+            <Text style={styles.backBtnText}>◀️</Text>
           </TouchableOpacity>
           <Text style={styles.headerTitle}>Détail de la demande</Text>
           <View style={styles.headerRight} />
@@ -180,7 +180,7 @@ export default function RequestDetailScreen({ route, navigation }: Props) {
               activeOpacity={0.85}
             >
               <Text style={styles.respondButtonText}>
-                {responding ? 'Envoi en cours...' : '🩸  Je suis disponible'}
+                {responding ? 'Envoi en cours...' : '🩸 Je suis disponible'}
               </Text>
             </TouchableOpacity>
           ) : (

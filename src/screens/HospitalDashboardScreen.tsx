@@ -54,7 +54,8 @@ export default function HospitalDashboardScreen({ navigation }: Props) {
       if (!isRefresh) setLoading(true);
       setError(null);
       const response = await api.get(hospitalRoutes.myRequests);
-      setRequests(response.data.data || response.data || []);
+      const requestsData = response?.data?.requests?.data ?? response?.data?.data ?? response?.data ?? [];
+      setRequests(requestsData);
     } catch (err: any) {
       setError(err?.response?.data?.message || 'Impossible de charger les données.');
     } finally {
@@ -91,7 +92,7 @@ export default function HospitalDashboardScreen({ navigation }: Props) {
       <SafeAreaView style={styles.headerSafe}>
         <View style={styles.header}>
           <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
-            <Text style={styles.backBtnText}>←</Text>
+            <Text style={styles.backBtnText}>◀️</Text>
           </TouchableOpacity>
           <View style={styles.headerText}>
             <Text style={styles.headerTitle}>Tableau de bord</Text>

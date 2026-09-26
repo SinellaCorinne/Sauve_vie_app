@@ -77,7 +77,7 @@ export default function DonorHistoryScreen({ navigation }: Props) {
     <SafeAreaView style={styles.headerSafe}>
       <View style={styles.header}>
         <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
-          <Text style={styles.backBtnText}>←</Text>
+          <Text style={styles.backBtnText}>◀️</Text>
         </TouchableOpacity>
         <View style={styles.headerText}>
           <Text style={styles.headerTitle}>Mes dons</Text>
